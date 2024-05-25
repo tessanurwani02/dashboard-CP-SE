@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Sales Dashboard</title>
+    <link rel="stylesheet"  href="styles.css">
+</head>
+<body>
+    <h2 class="stylish-title">Coffee Shop Sales Data Table</h2>
+    <div class="table-container">
+        <table id="data-table">
+            <thead>
+                <tr>
+                  <th>Transaction ID</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Quantity</th>
+                  <th>Store ID</th>
+                  <th>Store Location</th>
+                  <th>Product ID</th>
+                  <th>Unit Price</th>
+                  <th>Product Category</th>
+                  <th>Product Type</th>
+                  <th>Product Detail</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Data akan ditampilkan di sini -->
+            </tbody>
+        </table>
+    </div>
+    
+    <div id="pagination">
+        <button id="prev-btn">Previous</button>
+        <button id="next-btn">Next</button>
+    </div>
+    <br><br>
+
+    <div class="chart-wrapper">
+        <div class="chart-container chart-container1">
+            <div class="labels">Total Transaction All Category</div>
+            <canvas id="myChart1"></canvas>
+        </div>
+        <div class="chart-container chart-container2">
+            <div class="labels">Total Transaction Category Packaged Chocolate in Each Store</div>
+            <canvas id="myChart2"></canvas>
+        </div>
+        <div class="chart-container chart-container3">
+            <div class="labels">Total Monthly Transaction Category Packaged Chocolate</div>
+            <canvas id="myChart3"></canvas>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

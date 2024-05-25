@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.stylish-title {
+  font-size: 3em;
+  font-weight: bold;
+  background: -webkit-linear-gradient(45deg, #ffc700, #b28b00);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  margin: 0;
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+  text-align: center;
+}
+
+.stylish-title:hover {
+  color: #ffc700;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+#data-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 900px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border: 1px solid #dddddd;
+}
+
+#data-table thead tr {
+  background-color: #ffc700;
+  color: #ffffff;
+  text-align: left;
+}
+
+#data-table th,
+#data-table td {
+  padding: 12px 15px;
+}
+
+#data-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+#data-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+#data-table tbody tr:last-of-type {
+  border-bottom: 2px solid #ffc700;
+}
+
+#data-table tbody tr.active-row {
+  font-weight: bold;
+  color: #ffc700;
+}
+
+#pagination {
+  display: flex;
+  gap: 20px;
+}
+
+#prev-btn {
+  background-color: #6c757d; /* Gray */
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+#prev-btn:hover {
+  background-color: #5a6268;
+  box-shadow: 0 5px 15px rgba(92, 105, 119, 0.3);
+}
+
+#next-btn {
+  background-color: #007bff; /* Blue */
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+#next-btn:hover {
+  background-color: #0056b3;
+  box-shadow: 0 5px 15px rgba(0, 91, 187, 0.3);
+}
+
+.chart-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.chart-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  margin: 10px 0;
+  margin-top: 20px;
+}
+
+.labels {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+canvas {
+  width: 100% !important;
+  max-height: 400px;
+}
